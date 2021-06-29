@@ -16,7 +16,14 @@
                 <div class="card border-0 shadow rounded ">
                     <div class="card-body ">
                     <a href="{{ route('kendaraan.create') }}" class="btn btn-md btn-success mb-3">TAMBAH KENDARAAN</a>
-                    <a href=# class="btn btn-primary btn-md mb-3">Cetak Pdf</a>
+                    <button onclick="tampilpdf()" type="button" class="btn btn-primary mb-3">
+                       Cetak PDF 	
+                    </button >
+                    <script>
+                    function tampilpdf(){
+                        window.print();
+                    }
+                    </script>
                     <a href="{{ route('logout') }}" class="btn btn-danger btn-md mb-3 float-right">Logout</a>
 
                         <table class="table table-bordered">
